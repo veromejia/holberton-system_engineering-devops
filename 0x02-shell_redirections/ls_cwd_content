@@ -1,0 +1,15 @@
+total 44
+drwxr-xr-x 2 vero vero 4096 Jun 15 16:56 .
+drwxr-xr-x 6 vero vero 4096 Jun 15 13:39 ..
+-rwxr--r-- 1 vero vero   32 Jun 15 13:38 0-hello_world
+-rwxr--r-- 1 vero vero   28 Jun 15 14:42 1-confused_smiley
+-rwxr--r-- 1 vero vero   28 Jun 15 14:56 2-hellofile
+-rwxr--r-- 1 vero vero   39 Jun 15 15:41 3-twofiles
+-rwxr--r-- 1 vero vero   29 Jun 15 15:46 4-lastlines
+-rwxr--r-- 1 vero vero   29 Jun 15 16:05 5-firstlines
+-rwxr--r-- 1 vero vero   28 Jun 15 16:19 6-third_line
+-rwxr--r-- 1 vero vero   36 Jun 15 16:56 8-cwd_state
+-rw-r--r-- 1 vero vero    0 Jun 15 16:56 ls_cwd_content
+-rw-r--r-- 1 vero vero   16 Jun 15 13:42 README.md
+-rw-r--r-- 1 vero vero   16 Jun 15 13:42 README.md
+-rw-r--r-- 1 vero vero   16 Jun 15 13:42 README.md
