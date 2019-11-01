@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#script that use until command to display holberton school 10 times
+
+counter=0
+
+until [ $counter -gt 9 ]
+do
+  echo "Holberton School"
+  ((counter++))
+done
