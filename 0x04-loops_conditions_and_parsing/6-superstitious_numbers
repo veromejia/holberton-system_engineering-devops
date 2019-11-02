@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#display numbers 1-20 and an specific message in 4, 9, and 17
+
+i=1
+while [ $i -le 20 ]
+do
+	case $i in
+		5) echo "bad luck from China";;
+		10) echo "bad luck from Japan";;
+		18) echo "bad luck from Italy";;
+	esac
+	echo "$i"
+	(( i++ ))
+done
