@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# sript that only shows listening sockets, PID and name of each of them
-
-netstat -lp
