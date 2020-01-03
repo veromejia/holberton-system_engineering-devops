@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#fix the server
-sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+# fix the server, 
 sed -i 's/8080/80/g' /etc/nginx/sites-available/default
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
 service nginx restart
