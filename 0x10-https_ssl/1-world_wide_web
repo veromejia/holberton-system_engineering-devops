@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# script that will display information about subdomains.
+
+#!/usr/bin/env bash
+# displays information about subdomains
+
+display_subdomain()
+{
+    if [ "$#" -eq 2 ]; then
+        dig $2.$1 | grep -A1 'ANSWER SECTION:' | tr '\n' ' ' | awk '{split($0,position," "); split(position[4],sub_domain,"."); printf "The subdomain %s is a %s record and points to %s\n",sub_domain[1], position[7], position[8]}'
+    elif [ "$#" -eq 1 ]; then
+        dig www.$1 | grep -A1 'ANSWER SECTION:' | tr '\n' ' ' | awk '{split($0,position," "); printf "The subdomain www is a %s record and points to %s\n", position[7], position[8]}'
+        dig lb-01."$1" | grep -A1 'ANSWER SECTION:' | tr '\n' ' ' | awk '{split($0,position," "); printf "The subdomain lb-01 is a %s record and points to %s\n", position[7], position[8]}'
+        dig web-01."$1" | grep -A1 'ANSWER SECTION:' | tr '\n' ' ' | awk '{split($0,position," "); printf "The subdomain web-01 is a %s record and points to %s\n", position[7], position[8]}'
+        dig web-02."$1" | grep -A1 'ANSWER SECTION:' | tr '\n' ' ' | awk '{split($0,position," "); printf "The subdomain web-02 is a %s record and points to %s\n", position[7], position[8]}'
+    fi
+}
+display_subdomain $1 $2
